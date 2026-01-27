@@ -1,36 +1,291 @@
 <!DOCTYPE html>
-<html lang="tr">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BabySense AI - Gizlilik Politikası</title>
+    <title>BabyMood - Privacy Policy</title>
     <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
         body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
             line-height: 1.6;
-            max-width: 800px;
+            color: #333;
+            background-color: #f8f9fa;
+        }
+        
+        .container {
+            max-width: 900px;
             margin: 0 auto;
             padding: 20px;
-            color: #333;
+            background-color: #ffffff;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
         }
-        h1 { color: #2c3e50; }
-        h2 { color: #34495e; margin-top: 30px; }
+        
+        header {
+            text-align: center;
+            padding: 40px 0 30px;
+            border-bottom: 3px solid #4a90e2;
+            margin-bottom: 40px;
+        }
+        
+        h1 {
+            color: #2c3e50;
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+        
+        .last-updated {
+            color: #7f8c8d;
+            font-size: 0.9em;
+            font-style: italic;
+        }
+        
+        h2 {
+            color: #34495e;
+            font-size: 1.8em;
+            margin-top: 40px;
+            margin-bottom: 15px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #e0e0e0;
+        }
+        
+        h3 {
+            color: #4a90e2;
+            font-size: 1.3em;
+            margin-top: 25px;
+            margin-bottom: 10px;
+        }
+        
+        p {
+            margin-bottom: 15px;
+            text-align: justify;
+        }
+        
+        ul {
+            margin: 15px 0 15px 30px;
+        }
+        
+        li {
+            margin-bottom: 8px;
+        }
+        
+        .contact-info {
+            background-color: #f0f7ff;
+            padding: 20px;
+            border-radius: 8px;
+            border-left: 4px solid #4a90e2;
+            margin: 20px 0;
+        }
+        
+        .contact-info strong {
+            color: #2c3e50;
+        }
+        
+        .compliance-section {
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 8px;
+            margin-top: 30px;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 30px 0 20px;
+            margin-top: 50px;
+            border-top: 2px solid #e0e0e0;
+            color: #7f8c8d;
+            font-size: 0.9em;
+        }
+        
+        a {
+            color: #4a90e2;
+            text-decoration: none;
+        }
+        
+        a:hover {
+            text-decoration: underline;
+        }
+        
+        @media (max-width: 768px) {
+            .container {
+                padding: 15px;
+            }
+            
+            h1 {
+                font-size: 2em;
+            }
+            
+            h2 {
+                font-size: 1.5em;
+            }
+            
+            h3 {
+                font-size: 1.2em;
+            }
+        }
     </style>
 </head>
 <body>
-    <h1>BabySense AI - Gizlilik Politikası</h1>
-    <p><strong>Son Güncelleme:</strong> 27 Ocak 2026</p>
-    
-    <h2>1. Genel Bilgiler</h2>
-    <p>BabySense AI uygulaması, kullanıcılarının gizliliğini korumayı taahhüt eder.</p>
-    
-    <h2>2. Toplanan Veriler</h2>
-    <p>[Uygulamanızın topladığı verileri buraya yazın]</p>
-    
-    <h2>3. Verilerin Kullanımı</h2>
-    <p>[Verileri nasıl kullandığınızı açıklayın]</p>
-    
-    <h2>4. İletişim</h2>
-    <p>Sorularınız için: [email@example.com]</p>
+    <div class="container">
+        <header>
+            <h1>BabyMood AI</h1>
+            <h2 style="border: none; margin: 10px 0; padding: 0;">Privacy Policy</h2>
+            <p class="last-updated">Last Updated: January 27, 2026</p>
+        </header>
+
+        <section>
+            <h2>1. Introduction</h2>
+            <p>BabyMood ("we," "our," or "us") respects your privacy and is committed to protecting your personal data. This Privacy Policy explains how we collect, use, and safeguard your information when you use our mobile application.</p>
+        </section>
+
+        <section>
+            <h2>2. Information We Collect</h2>
+            
+            <h3>2.1 Information You Provide:</h3>
+            <ul>
+                <li>Account information (email, name)</li>
+                <li>Baby profile data (age, gender - optional)</li>
+                <li>Audio recordings of baby cries (processed locally and/or on secure servers)</li>
+                <li>Usage preferences and settings</li>
+            </ul>
+
+            <h3>2.2 Automatically Collected Information:</h3>
+            <ul>
+                <li>Device information (model, OS version, unique identifiers)</li>
+                <li>App usage data and analytics</li>
+                <li>Crash reports and performance data</li>
+                <li>IP address and general location data</li>
+            </ul>
+
+            <h3>2.3 Third-Party Services:</h3>
+            <p>We use the following third-party services that may collect information:</p>
+            <ul>
+                <li><strong>Firebase Analytics</strong> - App usage and performance</li>
+                <li><strong>Google AdMob</strong> - Advertising (for free users)</li>
+                <li><strong>RevenueCat</strong> - Subscription management</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>3. How We Use Your Information</h2>
+            <p>We use collected information to:</p>
+            <ul>
+                <li>Provide and improve our AI-powered baby cry analysis service</li>
+                <li>Process and analyze audio recordings to provide insights</li>
+                <li>Personalize your experience</li>
+                <li>Send important updates and notifications</li>
+                <li>Process payments and manage subscriptions</li>
+                <li>Improve app performance and fix bugs</li>
+                <li>Conduct research to enhance our AI models</li>
+                <li>Comply with legal obligations</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>4. Data Storage and Security</h2>
+            <ul>
+                <li>Audio recordings are processed securely and are not stored permanently unless you choose to save them</li>
+                <li>We use industry-standard encryption to protect your data</li>
+                <li>Data is stored on secure servers with restricted access</li>
+                <li>We implement appropriate technical and organizational measures to prevent unauthorized access</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>5. Data Sharing and Disclosure</h2>
+            <p>We do not sell your personal data. We may share information with:</p>
+            <ul>
+                <li>Service providers (cloud hosting, analytics, payment processing)</li>
+                <li>Legal authorities when required by law</li>
+                <li>Third parties with your explicit consent</li>
+            </ul>
+            <p>Our AI analysis may use aggregated, anonymized data to improve our models, but this data cannot be traced back to individual users.</p>
+        </section>
+
+        <section>
+            <h2>6. Your Rights and Choices</h2>
+            <p>You have the right to:</p>
+            <ul>
+                <li>Access your personal data</li>
+                <li>Correct inaccurate data</li>
+                <li>Delete your account and associated data</li>
+                <li>Opt-out of marketing communications</li>
+                <li>Disable analytics tracking (where technically feasible)</li>
+                <li>Withdraw consent at any time</li>
+            </ul>
+            <p>To exercise these rights, contact us at <a href="mailto:babymood@outlook.com">babymood@outlook.com</a></p>
+        </section>
+
+        <section>
+            <h2>7. International Data Transfers</h2>
+            <p>Your data may be transferred to and processed in countries other than your country of residence. We ensure appropriate safeguards are in place for such transfers.</p>
+        </section>
+
+        <section>
+            <h2>8. Data Retention</h2>
+            <p>We retain your data only as long as necessary to provide our services or as required by law. You can request deletion of your data at any time.</p>
+        </section>
+
+        <section>
+            <h2>9. Cookies and Tracking Technologies</h2>
+            <p>We use cookies and similar technologies for:</p>
+            <ul>
+                <li>Analytics and performance monitoring</li>
+                <li>Personalization</li>
+                <li>Advertising (for free users)</li>
+            </ul>
+            <p>You can manage cookie preferences through your device settings.</p>
+        </section>
+
+        <section>
+            <h2>10. Third-Party Links</h2>
+            <p>Our App may contain links to third-party websites or services. We are not responsible for their privacy practices.</p>
+        </section>
+
+        <section>
+            <h2>11. Children's Privacy</h2>
+            <p>Our app is designed to help parents care for their babies. We do not knowingly collect personal information directly from children under 13. If you believe we have inadvertently collected such information, please contact us immediately.</p>
+        </section>
+
+        <section>
+            <h2>12. Changes to This Privacy Policy</h2>
+            <p>We may update this Privacy Policy from time to time. We will notify you of significant changes through the App or via email. Your continued use of the App after changes are posted constitutes your acceptance of the updated Privacy Policy.</p>
+        </section>
+
+        <section>
+            <h2>13. Contact Us</h2>
+            <div class="contact-info">
+                <p>For questions or concerns about this Privacy Policy or our data practices:</p>
+                <p><strong>Email:</strong> <a href="mailto:babymood@outlook.com">babymood@outlook.com</a></p>
+            </div>
+        </section>
+
+        <section>
+            <h2>14. Compliance</h2>
+            <div class="compliance-section">
+                <p>This Privacy Policy complies with:</p>
+                <ul>
+                    <li><strong>GDPR</strong> (General Data Protection Regulation) for EU users</li>
+                    <li><strong>CCPA</strong> (California Consumer Privacy Act) for California users</li>
+                    <li><strong>Apple App Store Guidelines</strong></li>
+                    <li><strong>Google Play Store Guidelines</strong></li>
+                </ul>
+            </div>
+        </section>
+
+        <section>
+            <h2>15. Consent</h2>
+            <p>By using BabyMood, you acknowledge that you have read and understood this Privacy Policy and agree to the collection, use, and disclosure of your information as described herein.</p>
+        </section>
+
+        <footer>
+            <p>&copy; 2026 BabyMood. All rights reserved.</p>
+        </footer>
+    </div>
 </body>
 </html>
