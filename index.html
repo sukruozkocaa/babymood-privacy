@@ -3,158 +3,267 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BabyMood - Privacy Policy</title>
+    <title>BabyMood – Privacy Policy</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet">
     <style>
+        :root {
+            --bg: #faf9f7;
+            --card: #ffffff;
+            --text: #2d2a26;
+            --text-muted: #6b6560;
+            --accent: #e8a87c;
+            --accent-soft: #f5e6dc;
+            --accent-dark: #c4895c;
+            --border: #ebe8e4;
+            --highlight: #8b7355;
+            --shadow: 0 4px 24px rgba(45, 42, 38, 0.06);
+            --radius: 16px;
+            --radius-sm: 10px;
+        }
+
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
-        
+
+        html {
+            scroll-behavior: smooth;
+        }
+
         body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-            line-height: 1.6;
-            color: #333;
-            background-color: #f8f9fa;
+            font-family: 'DM Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.7;
+            color: var(--text);
+            background: var(--bg);
+            font-size: 17px;
         }
-        
-        .container {
-            max-width: 900px;
+
+        .page {
+            max-width: 720px;
             margin: 0 auto;
-            padding: 20px;
-            background-color: #ffffff;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            padding: 32px 24px 48px;
         }
-        
-        header {
+
+        /* Header */
+        .header {
             text-align: center;
-            padding: 40px 0 30px;
-            border-bottom: 3px solid #4a90e2;
+            padding: 48px 24px 40px;
             margin-bottom: 40px;
+            background: linear-gradient(165deg, var(--card) 0%, var(--accent-soft) 100%);
+            border-radius: var(--radius);
+            box-shadow: var(--shadow);
+            border: 1px solid var(--border);
         }
-        
-        h1 {
-            color: #2c3e50;
-            font-size: 2.5em;
-            margin-bottom: 10px;
+
+        .logo {
+            font-family: 'Outfit', sans-serif;
+            font-size: 2.25rem;
+            font-weight: 700;
+            color: var(--text);
+            letter-spacing: -0.02em;
+            margin-bottom: 6px;
         }
-        
+
+        .title {
+            font-family: 'Outfit', sans-serif;
+            font-size: 1.35rem;
+            font-weight: 600;
+            color: var(--highlight);
+            margin-bottom: 12px;
+        }
+
         .last-updated {
-            color: #7f8c8d;
-            font-size: 0.9em;
+            font-size: 0.9rem;
+            color: var(--text-muted);
             font-style: italic;
         }
-        
-        h2 {
-            color: #34495e;
-            font-size: 1.8em;
-            margin-top: 40px;
-            margin-bottom: 15px;
-            padding-bottom: 10px;
-            border-bottom: 2px solid #e0e0e0;
+
+        /* Sections */
+        section {
+            background: var(--card);
+            padding: 28px 32px;
+            margin-bottom: 20px;
+            border-radius: var(--radius);
+            box-shadow: var(--shadow);
+            border: 1px solid var(--border);
         }
-        
-        h3 {
-            color: #4a90e2;
-            font-size: 1.3em;
-            margin-top: 25px;
+
+        section h2 {
+            font-family: 'Outfit', sans-serif;
+            font-size: 1.35rem;
+            font-weight: 600;
+            color: var(--text);
+            margin-bottom: 18px;
+            padding-bottom: 12px;
+            border-bottom: 2px solid var(--accent-soft);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        section h2::before {
+            content: '';
+            width: 4px;
+            height: 22px;
+            background: linear-gradient(180deg, var(--accent), var(--accent-dark));
+            border-radius: 2px;
+        }
+
+        section h3 {
+            font-family: 'Outfit', sans-serif;
+            font-size: 1.05rem;
+            font-weight: 600;
+            color: var(--highlight);
+            margin-top: 22px;
             margin-bottom: 10px;
         }
-        
-        p {
-            margin-bottom: 15px;
+
+        section p {
+            margin-bottom: 14px;
             text-align: justify;
+            color: var(--text);
         }
-        
-        ul {
-            margin: 15px 0 15px 30px;
+
+        section ul {
+            margin: 12px 0 16px 22px;
+            list-style: none;
         }
-        
-        li {
+
+        section li {
+            margin-bottom: 10px;
+            padding-left: 22px;
+            position: relative;
+            color: var(--text);
+        }
+
+        section li::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 10px;
+            width: 6px;
+            height: 6px;
+            background: var(--accent);
+            border-radius: 50%;
+        }
+
+        .contact-box {
+            background: linear-gradient(135deg, var(--accent-soft) 0%, rgba(232, 168, 124, 0.15) 100%);
+            padding: 22px 24px;
+            border-radius: var(--radius-sm);
+            border-left: 4px solid var(--accent);
+            margin: 18px 0;
+        }
+
+        .contact-box p {
             margin-bottom: 8px;
         }
-        
-        .contact-info {
-            background-color: #f0f7ff;
-            padding: 20px;
-            border-radius: 8px;
-            border-left: 4px solid #4a90e2;
-            margin: 20px 0;
-        }
-        
-        .contact-info strong {
-            color: #2c3e50;
-        }
-        
-        .compliance-section {
-            background-color: #f9f9f9;
-            padding: 20px;
-            border-radius: 8px;
-            margin-top: 30px;
-        }
-        
-        footer {
-            text-align: center;
-            padding: 30px 0 20px;
-            margin-top: 50px;
-            border-top: 2px solid #e0e0e0;
-            color: #7f8c8d;
-            font-size: 0.9em;
-        }
-        
-        a {
-            color: #4a90e2;
+
+        .contact-box a {
+            color: var(--accent-dark);
+            font-weight: 600;
             text-decoration: none;
         }
-        
+
+        .contact-box a:hover {
+            text-decoration: underline;
+        }
+
+        .compliance-box {
+            background: var(--bg);
+            padding: 22px 24px;
+            border-radius: var(--radius-sm);
+            border: 1px solid var(--border);
+            margin-top: 16px;
+        }
+
+        .compliance-box ul {
+            margin-bottom: 0;
+        }
+
+        footer {
+            text-align: center;
+            padding: 36px 24px 24px;
+            margin-top: 24px;
+            color: var(--text-muted);
+            font-size: 0.9rem;
+            border-top: 1px solid var(--border);
+        }
+
+        a {
+            color: var(--accent-dark);
+            text-decoration: none;
+            font-weight: 500;
+        }
+
         a:hover {
             text-decoration: underline;
         }
-        
-        @media (max-width: 768px) {
-            .container {
-                padding: 15px;
+
+        @media (max-width: 640px) {
+            .page {
+                padding: 20px 16px 36px;
             }
-            
-            h1 {
-                font-size: 2em;
+
+            .header {
+                padding: 36px 20px 32px;
+                margin-bottom: 28px;
             }
-            
-            h2 {
-                font-size: 1.5em;
+
+            .logo {
+                font-size: 1.9rem;
             }
-            
-            h3 {
-                font-size: 1.2em;
+
+            .title {
+                font-size: 1.2rem;
+            }
+
+            section {
+                padding: 22px 20px;
+            }
+
+            body {
+                font-size: 16px;
+            }
+
+            section h2 {
+                font-size: 1.2rem;
+            }
+
+            section h3 {
+                font-size: 1rem;
             }
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <header>
-            <h1>BabyMood</h1>
-            <h2 style="border: none; margin: 10px 0; padding: 0;">Privacy Policy</h2>
-            <p class="last-updated">Last Updated: January 27, 2026</p>
+    <div class="page">
+        <header class="header">
+            <h1 class="logo">BabyMood</h1>
+            <p class="title">Privacy Policy</p>
+            <p class="last-updated">Last updated: January 27, 2026</p>
         </header>
 
         <section>
             <h2>1. Introduction</h2>
-            <p>BabyMood ("we," "our," or "us") respects your privacy and is committed to protecting your personal data. This Privacy Policy explains how we collect, use, and safeguard your information when you use our mobile application. Our app provides AI-powered analysis of baby sounds, videos, and images, along with sleep sound features to help parents better understand and care for their babies.</p>
+            <p>BabyMood ("we," "our," or "us") respects your privacy and is committed to protecting your personal data. This Privacy Policy explains how we collect, use, and safeguard your information when you use our mobile application. Our app provides analysis of baby sounds, videos, and images, along with sleep sound features to help parents better understand and care for their babies.</p>
         </section>
 
         <section>
             <h2>2. Information We Collect</h2>
-            
-            <h3>2.1 Information You Provide:</h3>
+
+            <h3>2.1 Information You Provide</h3>
             <ul>
                 <li>Audio recordings of baby sounds (cries, coos, etc.) for analysis</li>
                 <li>Video recordings of baby activities for analysis</li>
-                <li>Photos/images of baby for analysis</li>
+                <li>Photos or images of your baby for analysis</li>
                 <li>App preferences and settings</li>
             </ul>
 
-            <h3>2.2 Automatically Collected Information:</h3>
+            <h3>2.2 Automatically Collected Information</h3>
             <ul>
                 <li>Device information (model, OS version, unique identifiers)</li>
                 <li>App usage data and analytics</li>
@@ -162,12 +271,12 @@
                 <li>IP address and general location data</li>
             </ul>
 
-            <h3>2.3 Third-Party Services:</h3>
+            <h3>2.3 Third-Party Services</h3>
             <p>We use the following third-party services that may collect information:</p>
             <ul>
-                <li><strong>Firebase Analytics</strong> - App usage and performance</li>
-                <li><strong>Google AdMob</strong> - Advertising (for free users)</li>
-                <li><strong>RevenueCat</strong> - Subscription management</li>
+                <li><strong>Firebase Analytics</strong> – app usage and performance</li>
+                <li><strong>Google AdMob</strong> – advertising (for free users)</li>
+                <li><strong>RevenueCat</strong> – subscription management</li>
             </ul>
         </section>
 
@@ -175,53 +284,46 @@
             <h2>3. How We Use Your Information</h2>
             <p>We use collected information to:</p>
             <ul>
-                <li>Provide AI-powered analysis of baby sounds, videos, and images</li>
+                <li>Provide analysis of baby sounds, videos, and images</li>
                 <li>Process audio, video, and image recordings to provide insights about your baby's needs</li>
                 <li>Deliver sleep sound content and features</li>
                 <li>Personalize your app experience</li>
                 <li>Process premium purchases and manage subscriptions</li>
                 <li>Improve app performance and fix bugs</li>
-                <li>Enhance our AI analysis models using aggregated, anonymized data</li>
+                <li>Improve our services using aggregated, anonymized data</li>
                 <li>Comply with legal obligations</li>
             </ul>
         </section>
 
         <section>
-            <h2>4. Data Storage and Security</h2>
+            <h2>4. Media Processing and Storage</h2>
             <ul>
-                <li>Audio, video, and image recordings are processed securely and are not stored permanently unless you choose to save them within the app</li>
-                <li>Sleep sounds are streamed or cached locally on your device and do not require data transmission</li>
-                <li>We use industry-standard encryption to protect your data during transmission and storage</li>
-                <li>Data is processed on secure servers with restricted access</li>
-                <li>We implement appropriate technical and organizational measures to prevent unauthorized access</li>
-                <li>No user account or login credentials are stored as the app does not require authentication</li>
+                <li>Audio, video, and image recordings are processed securely and are not stored permanently unless you choose to save them within the app.</li>
+                <li>Sleep sounds are streamed or cached locally on your device and do not require transmission of personal data.</li>
+                <li>We use industry-standard encryption to protect your data during transmission and storage.</li>
+                <li>Processing may occur on your device or on our secure servers depending on the feature.</li>
+                <li>No user account or login credentials are stored; the app does not require registration.</li>
             </ul>
         </section>
 
         <section>
-            <h2>5. Data Sharing and Disclosure</h2>
+            <h2>5. Data Storage and Security</h2>
+            <ul>
+                <li>Data is processed on secure servers with restricted access.</li>
+                <li>We implement appropriate technical and organizational measures to prevent unauthorized access.</li>
+                <li>Media files are not retained beyond the analysis session unless you explicitly save them in the app.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>6. Data Sharing and Disclosure</h2>
             <p>We do not sell your personal data. We may share information with:</p>
             <ul>
                 <li>Service providers (cloud hosting, analytics, payment processing)</li>
                 <li>Legal authorities when required by law</li>
                 <li>Third parties with your explicit consent</li>
             </ul>
-            <p>Our AI analysis may use aggregated, anonymized data from audio, video, and image recordings to improve our models, but this data cannot be traced back to individual users or specific babies.</p>
-        </section>
-
-        <section>
-            <h2>6. Media Processing and Analysis</h2>
-            <h3>6.1 Audio Analysis</h3>
-            <p>When you use our audio analysis feature, recordings are processed using AI to identify patterns such as crying, cooing, or other baby sounds. Analysis occurs either on your device or on our secure servers, depending on the feature used.</p>
-            
-            <h3>6.2 Video Analysis</h3>
-            <p>Video recordings are analyzed to detect baby movements, facial expressions, and activities. Processing is performed securely and videos are not permanently stored unless you explicitly save them.</p>
-            
-            <h3>6.3 Image Analysis</h3>
-            <p>Photos or images you submit are analyzed for relevant baby-related insights. Images are processed securely and are not retained beyond the analysis session unless you choose to save them.</p>
-            
-            <h3>6.4 Sleep Sounds</h3>
-            <p>Our sleep sound library is provided for your convenience. These sounds are either streamed or cached locally on your device and do not involve transmission of personal data.</p>
+            <p>We may use aggregated, anonymized data to improve our services. This data cannot be traced back to individual users or specific babies.</p>
         </section>
 
         <section>
@@ -230,12 +332,15 @@
             <ul>
                 <li>Delete any saved recordings from within the app</li>
                 <li>Clear app data through your device settings</li>
-                <li>Opt-out of analytics tracking (where technically feasible)</li>
+                <li>Opt out of analytics tracking where technically feasible</li>
                 <li>Uninstall the app to remove all locally stored data</li>
                 <li>Request information about data we may have processed</li>
                 <li>Withdraw consent at any time</li>
             </ul>
-            <p>For data-related requests or questions, contact us at <a href="mailto:babymood@outlook.com">babymood@outlook.com</a></p>
+            <div class="contact-box">
+                <p>For data-related requests or questions:</p>
+                <p><strong>Email:</strong> <a href="mailto:babymood@outlook.com">babymood@outlook.com</a></p>
+            </div>
         </section>
 
         <section>
@@ -261,7 +366,7 @@
 
         <section>
             <h2>11. Third-Party Links</h2>
-            <p>Our App may contain links to third-party websites or services. We are not responsible for their privacy practices.</p>
+            <p>Our app may contain links to third-party websites or services. We are not responsible for their privacy practices.</p>
         </section>
 
         <section>
@@ -271,12 +376,12 @@
 
         <section>
             <h2>13. Changes to This Privacy Policy</h2>
-            <p>We may update this Privacy Policy from time to time. We will notify you of significant changes through the App or via email. Your continued use of the App after changes are posted constitutes your acceptance of the updated Privacy Policy.</p>
+            <p>We may update this Privacy Policy from time to time. We will notify you of significant changes through the app or via email. Your continued use of the app after changes are posted constitutes your acceptance of the updated Privacy Policy.</p>
         </section>
 
         <section>
             <h2>14. Contact Us</h2>
-            <div class="contact-info">
+            <div class="contact-box">
                 <p>For questions or concerns about this Privacy Policy or our data practices:</p>
                 <p><strong>Email:</strong> <a href="mailto:babymood@outlook.com">babymood@outlook.com</a></p>
             </div>
@@ -284,8 +389,8 @@
 
         <section>
             <h2>15. Compliance</h2>
-            <div class="compliance-section">
-                <p>This Privacy Policy complies with:</p>
+            <div class="compliance-box">
+                <p>This Privacy Policy is intended to comply with:</p>
                 <ul>
                     <li><strong>GDPR</strong> (General Data Protection Regulation) for EU users</li>
                     <li><strong>CCPA</strong> (California Consumer Privacy Act) for California users</li>
@@ -301,7 +406,7 @@
         </section>
 
         <footer>
-            <p>&copy; 2026 BabyMood AI. All rights reserved.</p>
+            <p>&copy; 2026 BabyMood. All rights reserved.</p>
         </footer>
     </div>
 </body>
