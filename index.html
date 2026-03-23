@@ -110,6 +110,7 @@
             height: 22px;
             background: linear-gradient(180deg, var(--accent), var(--accent-dark));
             border-radius: 2px;
+            flex-shrink: 0;
         }
 
         section h3 {
@@ -148,6 +149,25 @@
             height: 6px;
             background: var(--accent);
             border-radius: 50%;
+        }
+
+        .face-data-box {
+            background: linear-gradient(135deg, rgba(232, 168, 124, 0.08) 0%, rgba(139, 115, 85, 0.06) 100%);
+            padding: 22px 24px;
+            border-radius: var(--radius-sm);
+            border: 1px solid var(--border);
+            border-left: 4px solid var(--accent-dark);
+            margin-top: 24px;
+        }
+
+        .face-data-box h3 {
+            margin-top: 0;
+            margin-bottom: 14px;
+            color: var(--text);
+        }
+
+        .face-data-box ul {
+            margin-bottom: 0;
         }
 
         .contact-box {
@@ -301,6 +321,18 @@
                 <li>Processing may occur on your device or on our secure servers depending on the feature.</li>
                 <li>No user account or login credentials are stored; the app does not require registration.</li>
             </ul>
+
+            <div class="face-data-box">
+                <h3>4.1 Face Data</h3>
+                <ul>
+                    <li>Our app may analyze facial features from images or video frames provided by the user solely to generate insights and results within the app.</li>
+                    <li>We do not collect, store, or retain any facial images, biometric identifiers, or face geometry data.</li>
+                    <li>Face-related analysis is performed temporarily and only for the duration required to generate results. Once the analysis is completed, the data is immediately discarded.</li>
+                    <li>Face data is not stored on our servers and is not linked to any user identity.</li>
+                    <li>We do not share any face data with third parties under any circumstances.</li>
+                    <li>Face data is not used for identification, authentication, or tracking purposes.</li>
+                </ul>
+            </div>
         </section>
 
         <section>
@@ -375,7 +407,7 @@
             <h2>14. Contact Us</h2>
             <div class="contact-box">
                 <p>For questions or concerns about this Privacy Policy or our data practices:</p>
-                <p><strong>Email:</strong> <a href="mailto:babymoodinsight@outlook.com.com">babymoodinsight@outlook.com</a></p>
+                <p><strong>Email:</strong> <a href="mailto:babymoodinsight@outlook.com">babymoodinsight@outlook.com</a></p>
             </div>
         </section>
 
